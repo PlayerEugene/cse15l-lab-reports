@@ -1,5 +1,9 @@
-*Hello, abcdefghijklmnopqrstuvwxyz*
-**CSE 15L**
+[Lab Report 1](lab-report-1-week-2.html)
+[Lab Report 1](https://playereugene.github.io/<your-lab-reports-repo>/lab-report-1-week-2.html)
+
+*Hello, abcdefghijklmnopqrstuvwxyz*\
+**CSE 15L**\
+**backslash** for newline
 # Heading big
 ## Heading small
 [Link](http://google.com)
