@@ -8,3 +8,13 @@
 * list1
 * list2
 * list3
+1. One
+2. Two
+3. Three
+---
+`code font` normal font
+```
+# code block
+print '3 backticks or'
+print 'indent 4 spaces'
+```
