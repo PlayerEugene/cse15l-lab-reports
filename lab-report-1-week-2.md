@@ -55,3 +55,29 @@ scp WhereAmI.java cs15lwi22aba@ieng6.ucsd.edu:~/
 with **your directory** instead.\
 Enter your password if needed then try running the copied file in your UCSD terminal. Instead of your computer informtion, you should now see the *remote server's information* instead like below:
 ![Where Am I in server](lab1Images/whereami.png)
+
+## Step 5 - Setting an SSH Key
+To create an SSH Key in order to make logging onto your remote server easier, first go to **your computer's terminal**.\
+When you are at your computer's terminal, run the command `ssh-keygen` and input where you want the key to be and a password if you would like. *You can also skip these by pressing enter for the defauly and no password*\
+Now that you have your public and private key, get back onto the server terminal by using the command
+```
+$ ssh cs15lwi22aba@ieng6.ucsd.edu
+```
+with **your directory** and enter your password.\
+on the UCSD terminal, run the command `mkdir .ssh` and logout.\
+This created a .ssh directory on the remote server to which you will copy the ***public key*** to.\
+In order to copy the ***public key*** from your computer to the server, run
+```
+$ scp C:\Users\eugen\.ssh\id_rsa.pub cs15lwi22aba@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+but with **your directory** and the **server directory** respectively.\
+Below is what should appear if you try to log in with this key:
+![SSH Key Login Attempt](lab1Images\sshkey.png)
+Now that you have done this, you can use `ssh` and `scp` without a password on your computer!
+
+## Step 6 - Optimizing Remote Running
+Some tips on how to optimize running commands in terminal are to put commands at the end of an `ssh` command in quotes in order to run the command in the server you are connecting to.\
+Another useful trick is to use semicolons to differentiate different lines of code in one line rather than running many commands. An example is shown below:
+![Using Semicolon](lab1Images/finalpart.png)
+
+And that's it! You are ready to use VS code to connect to UCSD's remote server.
