@@ -18,6 +18,7 @@ The file above when run with the original program comes up with the following ou
 ```
 [this will be printed, https://google.com, some-page.html]
 ```
+We see this in the terminal when we run ![Error message 1](lab2Images/error1message.png)\
 Clearly from this output we can immedately see that `this will be printed` is not a link at all. However, without this test file, I would not have been able to find this error. The file let me find out that there was a case where the original program did not work and thus I could fix it.
 
 In order to fix this program, I made the following changes to the original code:
@@ -32,7 +33,7 @@ The second error my lab group decided to address was when there were missing bra
 would result in an error since the close bracket is never found which returns -1 for `nextCloseBracket` and thus the subsequent code would not give the right `indexOf` values.\
 This [test file](https://github.com/PlayerEugene/markdown-parse/blob/main/test3.md) is a *failure-inducing input*.\
 The file above when run with the original program comes up with the following error:
-![Error message](lab2Images/error2message.png)
+![Error message 2](lab2Images/error2message.png)
 So how do we fix this error? I made the following changes which fixed this error completely.
 ![Error 2 fix](lab2Images/error2.png)
 By adding this if statement, the program checks if any of the brackets or parentheses are not found and then breaks from the loop if they are not. This effectively skips the loop if there is an erraneous link which results in no error coming up.\
@@ -49,6 +50,7 @@ The file above when run with the original program comes up with the following ou
 ```
 [https://google.com, some-page.html, a frog in the wild]
 ```
+We see this in the terminal when we run ![Error message 3](lab2Images/error3message.png)\
 Immedately, we can see that `a frog in the wild` is not a link at all. However, without this test file, I would not have been able to find this error. The file let me find out that there was a case where the original program did not work and thus I could fix it by adding extra parameters.
 
 In order to fix this program, I made the following changes to the original code:
