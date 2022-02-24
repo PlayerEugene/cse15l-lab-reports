@@ -9,7 +9,7 @@ The GitHub repository to the program I reviewed [here](https://github.com/Shasha
 
 ## Snippet 1
 This is what snippet 1 should produce according to VS code's preview.
-![Snippet 1 Preview](lab4images/snippet1preview.png)\
+![Snippet 1 Preview](lab4Images/snippet1preview.png)\
 Based on this visual, we can assume that the output of MarkdownParse should be the last 3 attempted links since those are clickable while the first one simply outputs the code.\
 So based on this, we can create a replica output of
 ```
