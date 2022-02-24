@@ -5,7 +5,7 @@ This lab will talk about three changes to the original code that fixed various e
 
 ## Pre-lab information
 My GitHub repository [here](https://github.com/PlayerEugene/markdown-parse)\
-The GitHub repository to the program I reviewed [here](https://github.com/ucsd-cse15l-w22/markdown-parse)
+The GitHub repository to the program I reviewed [here](https://github.com/ShashankVenkatramani/markdown-parse)
 
 ## Snippet 1
 This is what snippet 1 should produce according to VS code's preview.
